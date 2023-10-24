@@ -5,5 +5,8 @@
 	],
 	"/category": [],
 	"/menu": [],
-	"/product": []
+	"/product": [],
+	"/[slug]": [
+		"src/routes/[slug]/+page.ts"
+	]
 }

@@ -20,7 +20,8 @@
 <script>
     import { onMount } from 'svelte'
     import './product.css'
-    import ''
+    import MdAddShoppingCart from 'svelte-icons/md/MdAddShoppingCart.svelte';
+    import { MdInfo } from 'svelte-icons/md';
 
     let products = []
     let showDetails = false;
@@ -37,12 +38,13 @@
     {#each products as product (product.id)}
     <div class="menu-item">
     <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ncYa9uMoC8FQL1zwGtvcloSVFVWjFdjWgg&usqp=CAU" alt="">
         <h2 class="card-title">{product.name}</h2>
-        <p class="card-text">Price: {product.price}</p>
-        <div class="details" class:show={showDetails}>
-        <p class="card-text">Stock: {product.stock}</p>
-        <p class="card-text">Tag: {product.tag}</p>
-        </div>
+        <p class="card-taxt">Rp.{product.price}</p>
+        <!-- <div class="details" class:show={showDetails}>
+        <p class="card-taxt">Stock: {product.stock}</p>
+        <p class="card-taxt">Tag: {product.tag}</p>
+        </div> -->
         {#if !product.selected}
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" on:click={() => product.selected = true}>
             Buy
@@ -57,24 +59,36 @@
     {/each}
 </div>
 
+
 <div class="cart">
-    <h2 class="card-title">Order Information</h2>
+    <h2 class="card-title flex items-center text-lg font-bold">
+        <!-- <MdInfo class="w-6 h-6 mr-2" /> -->
+        Info Pesanan
+    </h2>
+</div>
+
+<div class="cart">
+    <h2 class="card-title flex items-center justify-content-center text-lg font-bold">
+        <!-- <MdAddShoppingCart class="w-2 h-2 mr-2" /> -->
+        Order Information
+    </h2>
     <p class="card-text">Your Order:</p>
     {#each products as product (product.id)}
     {#if product.selected}
         <div class="cart-item">
         <p class="cart-item-name">{product.name}</p>
         <p class="card-text">{product.price}</p>
-        <span class="cart-item-remove" on:click={() => product.selected = false}>Remove</span>
+        <span class="cart-item-remove cursor-pointer text-red-500" on:click={() => product.selected = false}>Remove</span>
         </div>
     {/if}
     {/each}
     <p class="card-text">Minimum Order: </p>
     <p class="card-text">Shipping Cost: </p>
-    <input type="text" placeholder="Enter voucher" />
+    <input type="text" placeholder="Enter voucher" class="p-2 border rounded" />
     <p class="card-text">Total: </p>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >
-    Place Order
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        Place Order
     </button>
 </div>
+
 </div>
