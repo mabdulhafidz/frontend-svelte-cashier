@@ -34,6 +34,7 @@ declare module '$env/static/private' {
 	export const NVM_CD_FLAGS: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
 	export const npm_package_devDependencies_typescript: string;
+	export const npm_package_dependencies_axios: string;
 	export const INIT_CWD: string;
 	export const SHELL: string;
 	export const TERM: string;
@@ -47,6 +48,7 @@ declare module '$env/static/private' {
 	export const MallocNanoZone: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const ZDOTDIR: string;
+	export const npm_package_devDependencies_rollup_plugin_svelte_svg: string;
 	export const SDKMAN_PLATFORM: string;
 	export const npm_package_private: string;
 	export const npm_package_devDependencies__sveltejs_kit: string;
@@ -56,6 +58,7 @@ declare module '$env/static/private' {
 	export const NVM_DIR: string;
 	export const npm_package_scripts_check_watch: string;
 	export const PASSWORD: string;
+	export const npm_package_devDependencies_mdsvex: string;
 	export const SDKMAN_CANDIDATES_API: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const SSH_AUTH_SOCK: string;
@@ -72,10 +75,12 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const USER_ZDOTDIR: string;
 	export const PWD: string;
+	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_command: string;
 	export const JAVA_HOME: string;
 	export const npm_package_scripts_preview: string;
 	export const P9K_SSH: string;
+	export const npm_package_devDependencies_flowbite_svelte_icons: string;
 	export const npm_lifecycle_event: string;
 	export const LANG: string;
 	export const npm_package_name: string;
@@ -86,6 +91,7 @@ declare module '$env/static/private' {
 	export const XPC_FLAGS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const FNM_MULTISHELL_PATH: string;
+	export const npm_package_devDependencies_svelte_hero_icons: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const npm_config_node_gyp: string;
 	export const XPC_SERVICE_NAME: string;
@@ -149,6 +155,7 @@ declare module '$env/dynamic/private' {
 		NVM_CD_FLAGS: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
 		npm_package_devDependencies_typescript: string;
+		npm_package_dependencies_axios: string;
 		INIT_CWD: string;
 		SHELL: string;
 		TERM: string;
@@ -162,6 +169,7 @@ declare module '$env/dynamic/private' {
 		MallocNanoZone: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		ZDOTDIR: string;
+		npm_package_devDependencies_rollup_plugin_svelte_svg: string;
 		SDKMAN_PLATFORM: string;
 		npm_package_private: string;
 		npm_package_devDependencies__sveltejs_kit: string;
@@ -171,6 +179,7 @@ declare module '$env/dynamic/private' {
 		NVM_DIR: string;
 		npm_package_scripts_check_watch: string;
 		PASSWORD: string;
+		npm_package_devDependencies_mdsvex: string;
 		SDKMAN_CANDIDATES_API: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		SSH_AUTH_SOCK: string;
@@ -187,10 +196,12 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		USER_ZDOTDIR: string;
 		PWD: string;
+		npm_package_devDependencies_tailwindcss: string;
 		npm_command: string;
 		JAVA_HOME: string;
 		npm_package_scripts_preview: string;
 		P9K_SSH: string;
+		npm_package_devDependencies_flowbite_svelte_icons: string;
 		npm_lifecycle_event: string;
 		LANG: string;
 		npm_package_name: string;
@@ -201,6 +212,7 @@ declare module '$env/dynamic/private' {
 		XPC_FLAGS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		FNM_MULTISHELL_PATH: string;
+		npm_package_devDependencies_svelte_hero_icons: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
 		npm_config_node_gyp: string;
 		XPC_SERVICE_NAME: string;

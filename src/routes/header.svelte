@@ -9,17 +9,19 @@
 
     <ul class="links">
         <li>
+            <a href="/menu">Menu</a>
+        </li>
+        <li>
             <a href="/about">About</a>
         </li>
         <li>
-            <a href="/contact">Contact</a>
+            <a href="/category">Category</a>
         </li>
         <li>
-            <a href="/rss.xml" target="_blank">RSS</a>
+            <a href="/product">Product</a>
         </li>
     </ul>
 
-    <button>Toggle</button>
 </nav>
 
 <style>

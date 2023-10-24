@@ -1,3 +1,9 @@
 {
-	"/": []
+	"/": [],
+	"/api/posts": [
+		"src/routes/api/posts/+server.ts"
+	],
+	"/category": [],
+	"/menu": [],
+	"/product": []
 }

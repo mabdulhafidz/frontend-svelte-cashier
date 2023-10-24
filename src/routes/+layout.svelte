@@ -7,7 +7,9 @@
     import 'open-props/buttons'
 
     import '../app.css'
+
 </script>
+
 
 <div class="layout">
     <Header />
