@@ -8,7 +8,7 @@
     </a>
 
     <ul class="links">
-        <li>
+        <li class="orange">
             <a href="/menu">Menu</a>
         </li>
         <li>
@@ -28,9 +28,17 @@
     nav {
         padding-block: var(--size-7);
     }
-
     .links {
         margin-block: var(--size-7);
+    }
+
+    .orange {
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 30px;
+        background-color: gray;
+        border-radius: 3px;
     }
 
     a {

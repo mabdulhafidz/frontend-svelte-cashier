@@ -20,17 +20,19 @@
 <script>
     import { onMount } from 'svelte'
     import './product.css'
-    import MdAddShoppingCart from 'svelte-icons/md/MdAddShoppingCart.svelte';
-    import { MdInfo } from 'svelte-icons/md';
 
     let products = []
     let showDetails = false;
 
     onMount(async () => {
-        const response = await fetch('http://127.0.0.1:8000/api/products')
-        const data = await response.json()
-        products = data.data
-    })
+    try {
+    const response = await fetch('http://localhost:8000/api/products');
+    const data = await response.json();
+        products  = data.data;
+    } catch (error) {
+    console.error(error);
+}
+});
 </script>
 
 <div class="menu-grid">
@@ -38,7 +40,8 @@
     {#each products as product (product.id)}
     <div class="menu-item">
     <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ncYa9uMoC8FQL1zwGtvcloSVFVWjFdjWgg&usqp=CAU" alt="">
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ncYa9uMoC8FQL1zwGtvcloSVFVWjFdjWgg&usqp=CAU" alt=""> -->
+        <img src={product.images} alt="" />
         <h2 class="card-title">{product.name}</h2>
         <p class="card-taxt">Rp.{product.price}</p>
         <!-- <div class="details" class:show={showDetails}>
@@ -59,13 +62,6 @@
     {/each}
 </div>
 
-
-<div class="cart">
-    <h2 class="card-title flex items-center text-lg font-bold">
-        <!-- <MdInfo class="w-6 h-6 mr-2" /> -->
-        Info Pesanan
-    </h2>
-</div>
 
 <div class="cart">
     <h2 class="card-title flex items-center justify-content-center text-lg font-bold">
@@ -90,5 +86,5 @@
         Place Order
     </button>
 </div>
-
 </div>
+
