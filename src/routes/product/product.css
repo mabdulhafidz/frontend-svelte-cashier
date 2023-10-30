@@ -28,12 +28,21 @@
 }
 
 .card-title {
+    display: flex;
+    justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .card-text {
+    color: #4a5568;
+    margin-bottom: 0.25rem;
+}
+
+.card-taxt {
+    display: flex;
+    justify-content: center;
     color: #4a5568;
     margin-bottom: 0.25rem;
 }
@@ -69,21 +78,11 @@
     background-color: #c53030;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.card-text {
-    color: #4a5568;
-    margin-bottom: 0.25rem;
-}
-
 .cart {
     position: absolute;
     top: 0;
     right: 0;
+    width: 300px;
     height: auto; 
     border: 1px solid #e2e8f0;
     border-radius: 0.5rem;
@@ -114,3 +113,56 @@
     color: #e53e3e;
     cursor: pointer;
 }
+
+/* Ukuran layar kecil */
+@media screen and (max-width: 640px) {
+    .menu-grid, .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .cart {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .order-info {
+        width: 100%;
+    }
+}
+
+/* Ukuran layar sedang */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .menu-grid, .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .cart {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .order-info {
+        width: 50%; 
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .menu-grid, .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .cart {
+        width: 300px;
+        margin-top: 10rem;
+    }
+
+    .order-info {
+        width: 30%;
+    }
+}
+
+

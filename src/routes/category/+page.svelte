@@ -30,11 +30,8 @@
 </script>
 
 <pre>
-    {#each category as categories (categories.id)}
-    <div class="menu-item">
-    <div class="card">
-        <h2 class="card-title">{categories.name}</h2>
-        </div>
-    </div>
-    {/each}
+	{JSON.stringify(data, null, 2)}
 </pre>
+
+
+<!-- <h2 class="card-title">{category.name}</h2> -->
