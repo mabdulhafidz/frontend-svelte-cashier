@@ -29,7 +29,6 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_prettier: string;
 	export const TERM_PROGRAM: string;
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
-	export const npm_package_dependencies_flowbite: string;
 	export const FNM_LOGLEVEL: string;
 	export const NODE: string;
 	export const NVM_CD_FLAGS: string;
@@ -42,9 +41,11 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_vite: string;
 	export const FNM_NODE_DIST_MIRROR: string;
 	export const TMPDIR: string;
+	export const npm_package_devDependencies_esbuild: string;
 	export const GRADLE_HOME: string;
 	export const npm_package_scripts_lint: string;
 	export const TERM_PROGRAM_VERSION: string;
+	export const npm_package_devDependencies_flowbite: string;
 	export const npm_package_scripts_dev: string;
 	export const MallocNanoZone: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
@@ -60,7 +61,6 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_check_watch: string;
 	export const PASSWORD: string;
 	export const npm_package_devDependencies_mdsvex: string;
-	export const npm_package_dependencies_flowbite_svelte: string;
 	export const SDKMAN_CANDIDATES_API: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const SSH_AUTH_SOCK: string;
@@ -74,6 +74,7 @@ declare module '$env/static/private' {
 	export const LSCOLORS: string;
 	export const npm_config_frozen_lockfile: string;
 	export const npm_package_devDependencies__typescript_eslint_parser: string;
+	export const npm_package_devDependencies_classnames: string;
 	export const npm_package_dependencies_tailwind_merge: string;
 	export const PATH: string;
 	export const USER_ZDOTDIR: string;
@@ -96,6 +97,7 @@ declare module '$env/static/private' {
 	export const FNM_MULTISHELL_PATH: string;
 	export const npm_package_devDependencies_svelte_hero_icons: string;
 	export const npm_package_dependencies_svelte_icons: string;
+	export const npm_package_devDependencies_flowbite_svelte: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const npm_config_node_gyp: string;
 	export const XPC_SERVICE_NAME: string;
@@ -108,6 +110,7 @@ declare module '$env/static/private' {
 	export const npm_package_type: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const FNM_DIR: string;
+	export const npm_package_devDependencies__popperjs_core: string;
 	export const LOGNAME: string;
 	export const LESS: string;
 	export const npm_package_scripts_format: string;
@@ -118,9 +121,10 @@ declare module '$env/static/private' {
 	export const GIT_ASKPASS: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const SDKMAN_CANDIDATES_DIR: string;
-	export const npm_package_dependencies__popperjs_core: string;
 	export const npm_package_scripts_check: string;
+	export const npm_package_devDependencies_svelte_sidebar_menu: string;
 	export const COLORTERM: string;
+	export const npm_package_dependencies_svelte_routing: string;
 	export const npm_node_execpath: string;
 	export const NODE_ENV: string;
 }
@@ -155,7 +159,6 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_prettier: string;
 		TERM_PROGRAM: string;
 		npm_package_devDependencies_eslint_plugin_svelte: string;
-		npm_package_dependencies_flowbite: string;
 		FNM_LOGLEVEL: string;
 		NODE: string;
 		NVM_CD_FLAGS: string;
@@ -168,9 +171,11 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_vite: string;
 		FNM_NODE_DIST_MIRROR: string;
 		TMPDIR: string;
+		npm_package_devDependencies_esbuild: string;
 		GRADLE_HOME: string;
 		npm_package_scripts_lint: string;
 		TERM_PROGRAM_VERSION: string;
+		npm_package_devDependencies_flowbite: string;
 		npm_package_scripts_dev: string;
 		MallocNanoZone: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
@@ -186,7 +191,6 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_check_watch: string;
 		PASSWORD: string;
 		npm_package_devDependencies_mdsvex: string;
-		npm_package_dependencies_flowbite_svelte: string;
 		SDKMAN_CANDIDATES_API: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		SSH_AUTH_SOCK: string;
@@ -200,6 +204,7 @@ declare module '$env/dynamic/private' {
 		LSCOLORS: string;
 		npm_config_frozen_lockfile: string;
 		npm_package_devDependencies__typescript_eslint_parser: string;
+		npm_package_devDependencies_classnames: string;
 		npm_package_dependencies_tailwind_merge: string;
 		PATH: string;
 		USER_ZDOTDIR: string;
@@ -222,6 +227,7 @@ declare module '$env/dynamic/private' {
 		FNM_MULTISHELL_PATH: string;
 		npm_package_devDependencies_svelte_hero_icons: string;
 		npm_package_dependencies_svelte_icons: string;
+		npm_package_devDependencies_flowbite_svelte: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
 		npm_config_node_gyp: string;
 		XPC_SERVICE_NAME: string;
@@ -234,6 +240,7 @@ declare module '$env/dynamic/private' {
 		npm_package_type: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		FNM_DIR: string;
+		npm_package_devDependencies__popperjs_core: string;
 		LOGNAME: string;
 		LESS: string;
 		npm_package_scripts_format: string;
@@ -244,9 +251,10 @@ declare module '$env/dynamic/private' {
 		GIT_ASKPASS: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		SDKMAN_CANDIDATES_DIR: string;
-		npm_package_dependencies__popperjs_core: string;
 		npm_package_scripts_check: string;
+		npm_package_devDependencies_svelte_sidebar_menu: string;
 		COLORTERM: string;
+		npm_package_dependencies_svelte_routing: string;
 		npm_node_execpath: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;

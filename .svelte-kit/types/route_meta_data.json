@@ -1,12 +1,7 @@
 {
 	"/": [],
-	"/api/posts": [
-		"src/routes/api/posts/+server.ts"
-	],
 	"/category": [],
+	"/components/Sidebar": [],
 	"/menu": [],
-	"/product": [],
-	"/[slug]": [
-		"src/routes/[slug]/+page.ts"
-	]
+	"/product": []
 }

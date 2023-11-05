@@ -14,10 +14,10 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/category": [4],
+		"/category": [3],
+		"/components/Sidebar": [4],
 		"/menu": [5],
-		"/product": [6],
-		"/[slug]": [3]
+		"/product": [6]
 	};
 
 export const hooks = {

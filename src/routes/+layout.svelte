@@ -7,37 +7,27 @@
     import 'open-props/buttons'
 
     import '../app.css'
-
 </script>
 
-
-<div class="layout">
+<main>
     <Header />
-    <main>
-    <slot />
-    </main>
-    <Footer />
 
-</div>
+    <div class="content">
+        <slot />
+    </div>
+
+    <!-- <Footer /> -->
+</main>
 
 <style>
-    .layout {
-        height: 100%;   
-        background-color: grey;
-        max-inline-size: 1440px;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        margin-inline: auto;
-        padding-inline: var(--size-7);
-    }
-
     main {
-        padding-block: var(--size-9);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
-    @media (min-width: 1440px) {
-        .layout {
-            padding-inline: 0;
-        }
+    .content {
+        flex-grow: 1;
+        padding: 1rem;
     }
 </style>
