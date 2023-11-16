@@ -117,6 +117,7 @@ declare module '$env/static/private' {
 	export const SDKMAN_DIR: string;
 	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
+	export const npm_package_dependencies_iconify_icon: string;
 	export const npm_config_user_agent: string;
 	export const GIT_ASKPASS: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
@@ -247,6 +248,7 @@ declare module '$env/dynamic/private' {
 		SDKMAN_DIR: string;
 		npm_lifecycle_script: string;
 		VSCODE_GIT_IPC_HANDLE: string;
+		npm_package_dependencies_iconify_icon: string;
 		npm_config_user_agent: string;
 		GIT_ASKPASS: string;
 		VSCODE_GIT_ASKPASS_NODE: string;

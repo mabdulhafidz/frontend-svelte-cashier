@@ -1,16 +1,13 @@
 <script lang="ts">
-    import Header from './header.svelte';
-    import Footer from './footer.svelte';
 
     import 'open-props/style'
     import 'open-props/normalize'
     import 'open-props/buttons'
 
     import '../app.css'
-</script>
+</script>   
 
 <main>
-    <Header />
 
     <div class="content">
         <slot />

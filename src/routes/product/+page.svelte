@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte'
     import './product.css'
+    import Sidebar from '../sidebar.svelte';
 
     let products = [];
     let showDetails = false;
@@ -15,11 +16,11 @@
 }
 });
 
-
 </script>
 
 
-<div class="menu-grid">
+    <Sidebar />
+<div class="container">
     <div class="product-grid">
         {#each products as product (product.id)}
         <div class="menu-item">
@@ -45,6 +46,7 @@
         {/each}
     </div>
 
+
     <div class="cart">
         <h2 class="card-title flex items-center justify-content-center text-lg font-bold">
             Order Information
@@ -68,3 +70,9 @@
         </button>
     </div>
 </div>
+
+<style>
+    .container {
+        display: flex;
+    }
+</style>

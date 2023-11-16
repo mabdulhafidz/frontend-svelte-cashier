@@ -1,8 +1,11 @@
 <script>
     import Footer from './footer.svelte';
+    import Header from './headers/page.svelte';
 </script>
 
+
 <main>
+    <Header />
     <div class="container mx-auto py-8">
         <h1 class="text-5xl font-bold mb-5">Welcome to Coffee Shop Cashier</h1>
         <p class="white text-lg text-gray-600 mb-8">A cashier application that makes it easy for you to manage coffee sales and inventory.</p>
